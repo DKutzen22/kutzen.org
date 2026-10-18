@@ -2,6 +2,14 @@
 title: "kutzen.org"
 ---
 
-This is a Quarto website.
+A short introduction.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Two primary links: “Explore my projects” and “View résumé.”
+
+Three featured projects.
+
+Two or three recent posts.
+
+One small interactive showcase.
+
+A brief contact invitation.

@@ -2,4 +2,14 @@
 title: "About"
 ---
 
-About this site
+What you’re studying.
+
+What draws you to phage genomics and computational biology.
+
+Why you enjoy building software and infrastructure.
+
+What you’re currently learning.
+
+A little about your writing or other interests.
+
+An email link and professional profiles.

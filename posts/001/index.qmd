@@ -1,0 +1,22 @@
+---
+title: "Building a reproducible phage-analysis workflow"
+description: "Notes on organizing a phage genomics pipeline with Snakemake."
+date: "2026-10-18"
+categories: [bioinformatics, phages, snakemake]
+---
+
+## Why I’m building this
+
+This is my first blog post.
+
+I’m using this space to document the design decisions,
+experiments, and lessons behind my projects.
+
+## A small example
+
+```python
+samples = ["phage-a", "phage-b"]
+
+for sample in samples:
+    print(f"Processing {sample}")
+```

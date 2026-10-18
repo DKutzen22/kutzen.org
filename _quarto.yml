@@ -2,18 +2,32 @@ project:
   type: website
 
 website:
-  title: "kutzen.org"
+  title: "Dalton Kutzen"
+  site-url: https://www.kutzen.org
+  description: "More about me than anyone wants to knoe"
+  open-graph: true
   navbar:
+    logo: false
+    background: primary
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - href: projects.qmd
+        text: Projects
+      - href: blog.qmd
+        text: Blog
+      - href: about.qmd
+        text: About
+    tools:
+      - icon: github
+        text: Source Code
+        href: https://github.com/DKutzen22/kutzen.org
+
+
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      - darkly
     css: styles.css
     toc: true
 
