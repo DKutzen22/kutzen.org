@@ -1,0 +1,59 @@
+color:
+  palette:
+    charcoal: "#222222"
+    white: "#ffffff"
+    navy: "#375a7f"
+    gray: "#444444"
+    teal: "#00bc8c"
+    blue: "#3498db"
+    yellow: "#f39c12"
+    red: "#e74c3c"
+    light-gray: "#adb5bd"
+    dark-gray: "#303030"
+
+  background: charcoal
+  foreground: white
+  primary: navy
+  secondary: gray
+  success: teal
+  info: blue
+  warning: yellow
+  danger: red
+  light: light-gray
+  dark: dark-gray
+
+typography:
+  fonts:
+    - family: Raleway
+      source: google
+    - family: Nunito
+      source: google
+    - family: IBM Plex Mono
+      source: google
+
+  base:
+    family: Nunito
+    size: 1rem
+    line-height: 1.6
+
+  headings:
+    family: Raleway
+    weight: 500
+
+  monospace:
+    family: IBM Plex Mono
+    size: 0.9em
+    weight: 400
+
+  monospace-inline:
+    color: "#7ee2c0"
+    background-color: "#303030"
+
+  monospace-block:
+    color: "#eeeeee"
+    background-color: "#1b1b1b"
+    line-height: 1.5
+
+  link:
+    color: teal
+    decoration: none

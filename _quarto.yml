@@ -4,19 +4,23 @@ project:
 website:
   title: "Dalton Kutzen"
   site-url: https://www.kutzen.org
-  description: "More about me than anyone wants to knoe"
+  description: "More about me than anyone wants to know"
   open-graph: true
   navbar:
-    logo: false
+    logo: images/logo.svg
     background: primary
     search: true
-    left:
-      - href: projects.qmd
+    right:
+      - href: index.qmd
+        text: Home
+      - href: projects/index.qmd
         text: Projects
-      - href: blog.qmd
+      - href: blog/index.qmd
         text: Blog
       - href: about.qmd
         text: About
+      - icon: rss
+        href: blog.xml
     tools:
       - icon: github
         text: Source Code
@@ -28,6 +32,13 @@ format:
   html:
     theme:
       - darkly
+      - brand
+    syntax-highlighting: espresso
+    code-copy: true
+    code-overflow: scroll
+    code-line-numbers: false
+    code-block-border-left: false
+    code-fold: false
     css: styles.css
     toc: true
 
