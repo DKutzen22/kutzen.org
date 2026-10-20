@@ -9,8 +9,10 @@ about:
   links:
     - text: LinkedIn
       href: https://www.linkedin.com/in/daltonkutzen/
+      target: _blank
     - text: GitHub
       href: https://github.com/dkutzen22
+      target: _blank
     - text: Email
       href: mailto:dalton@kutzen.org
 ---
