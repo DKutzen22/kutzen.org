@@ -50,7 +50,6 @@ typography:
     background-color: "#303030"
 
   monospace-block:
-    color: "#eeeeee"
     background-color: "#1b1b1b"
     line-height: 1.5
 

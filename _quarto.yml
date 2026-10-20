@@ -3,11 +3,10 @@ project:
 
 website:
   title: "Dalton Kutzen"
-  site-url: https://www.kutzen.org
+  site-url: "https://www.kutzen.org"
   description: "More about me than anyone wants to know"
   open-graph: true
   navbar:
-    logo: images/logo.svg
     background: primary
     search: true
     right:
@@ -24,7 +23,7 @@ website:
     tools:
       - icon: github
         text: Source Code
-        href: https://github.com/DKutzen22/kutzen.org
+        href: "https://github.com/DKutzen22/kutzen.org"
 
 
 
@@ -33,7 +32,8 @@ format:
     theme:
       - darkly
       - brand
-    syntax-highlighting: espresso
+      - custom.scss
+    syntax-highlighting: breezedark
     code-copy: true
     code-overflow: scroll
     code-line-numbers: false
