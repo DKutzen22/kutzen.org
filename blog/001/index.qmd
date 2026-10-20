@@ -3,6 +3,8 @@ title: "Building a reproducible phage-analysis workflow"
 description: "Notes on organizing a phage genomics pipeline with Snakemake."
 date: "2026-10-18"
 categories: [bioinformatics, phages, snakemake]
+citation:
+    url: https://kutzen.org/blog/001/
 ---
 
 ## Why I’m building this
@@ -19,4 +21,13 @@ samples = ["phage-a", "phage-b"]
 
 for sample in samples:
     print(f"Processing {sample}")
+
+#comments look like this
+
+if this:
+    that(that)
+elif:
+else:
+
+dict = {}
 ```
