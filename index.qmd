@@ -1,15 +1,31 @@
 ---
-title: "kutzen.org"
+title: "Dalton Kutzen"
+image: images/headshot_1.jpg
+toc: false
+about: 
+  template: jolla
+  image-shape: round
+  image-width: 17em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/daltonkutzen/
+    - text: GitHub
+      href: https://github.com/dkutzen22
+    - text: Email
+      href: mailto:dalton@kutzen.org
 ---
 
-A short introduction.
+Hi, I’m Dalton—a molecular biology student at BYU who spends a lot
+of time writing code and tinkering with computers.
 
-Two primary links: “Explore my projects” and “View résumé.”
+I’m interested in how things work, from the genomes of bacteriophages (viruses that infect bacteria)
+to the systems we build to study them. My research brings those interests
+together through bioinformatics: developing tools and workflows that
+make genomic analysis easier to reproduce, understand, and build on.
 
-Three featured projects.
+Outside of research, I’m usually experimenting with self-hosted software,
+finding another use for an old computer, or starting a project that
+will probably lead to three more. I also enjoy poetry, good music,
+and getting lost in a story.
 
-Two or three recent posts.
-
-One small interactive showcase.
-
-A brief contact invitation.
+Feel free to poke around and see what I’ve been working on. This is where I share projects, notes on what I’m learning, and whatever else catches my curiosity.
