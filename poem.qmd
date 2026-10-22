@@ -1,0 +1,19 @@
+---
+title: "What Remains"
+toc: false
+format:
+  html:
+    page-layout: full
+---
+
+::: {.poem}
+
+| I kept the names
+|   of things the river carried—
+| not because they stayed,
+| but because they passed.
+
+| By morning, even silence
+| had changed its shape.
+
+:::
