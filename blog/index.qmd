@@ -1,6 +1,7 @@
 ---
 title: "Reading Frames"
 description: "Notes on living systems, things I build, and questions I keep coming back to."
+author: ""
 listing: 
   contents: 
     - "**/index.qmd"
@@ -23,3 +24,4 @@ format:
     css: ../assets/listing-default.css 
 title-block-banner: false
 ---
+

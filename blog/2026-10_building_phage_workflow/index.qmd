@@ -1,11 +1,9 @@
 ---
 title: "Building a reproducible phage-analysis workflow"
 description: "Notes on organizing a phage genomics pipeline with Snakemake."
-author: "Dalton Kutzen"
 date: "10/21/2026"
 categories: [bioinformatics, phages, snakemake]
 title-block-banner: true
-toc: true
 citation:
     url: https://kutzen.org/blog/
 ---
