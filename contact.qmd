@@ -1,0 +1,45 @@
+---
+title: "Let’s connect"
+subtitle: "Research, software, and interesting questions."
+toc: false
+about:
+  template: jolla
+  links:
+    - icon: envelope
+      text: Email
+      href: "mailto:dalton@kutzen.org"
+    - icon: github
+      text: GitHub
+      href: "https://github.com/dkutzen22"
+---
+
+I’m Dalton, a molecular biology student at Brigham Young University
+working at the intersection of bacteriophage genomics, bioinformatics,
+and scientific software.
+
+I welcome conversations about research, open-source tools, and
+projects that bring biology and computation together.
+
+## Get in touch
+
+Email is the best place to start for research questions,
+collaboration ideas, or a general introduction.
+
+If you’re reaching out about a project, a little context helps:
+what you’re working on, what caught your interest, and what you’d
+like to explore together.
+
+## Questions about my software?
+
+For bugs, feature requests, or reproducible problems, please use
+the relevant project’s GitHub issue tracker when one is available.
+That keeps the discussion connected to the code and useful to
+other people working through the same issue.
+
+For anything private, use email instead.
+
+## Website feedback
+
+If you find a broken link, an error, or something that makes this
+site difficult to use, I’d appreciate hearing about it. Please include
+the page address and a brief description of the problem. You can open an issue [here](https://github.com/dkutzen22/kutzen.org/issues/new)

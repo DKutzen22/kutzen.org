@@ -1,0 +1,37 @@
+---
+title: "Accessibility"
+toc: false
+---
+
+I want this website to be usable by as many people as possible,
+including people who use assistive technologies.
+
+As I build and update the site, I aim to provide:
+
+- Readable text and sufficient color contrast in light and dark modes.
+- Navigation and interactive elements that work with a keyboard.
+- Descriptive links and a clear heading structure.
+- Useful alternative text for meaningful images.
+- Research figures and technical content with supporting explanations.
+
+## Ongoing improvements
+
+This website is a personal project and is still evolving.
+Some pages, figures, or interactive features may have accessibility
+limitations.
+
+I have not completed a comprehensive accessibility evaluation and
+do not currently claim conformance with a specific accessibility standard.
+
+## Report a problem
+
+If you encounter a barrier while using this website, please open an issue on this website's [Github](https://github.com/DKutzen22/kutzen.org/issues/new)
+
+If possible, include:
+
+- The page where you encountered the problem.
+- What you were trying to do.
+- A description of what did not work.
+- Your browser or assistive technology, if relevant.
+
+I’ll use this feedback to prioritize improvements.
