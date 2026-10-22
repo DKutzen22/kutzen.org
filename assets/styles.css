@@ -1,0 +1,29 @@
+/* css styles */
+/* Flatly / light mode */
+.footer-icon {
+  color: #263746;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  text-decoration: none;
+}
+
+/* Darkly / dark mode */
+body.quarto-dark .footer-icon {
+  color: #eeeeee;
+}
+
+.footer-icon:hover {
+  color: #087c65;
+}
+
+body.quarto-dark .footer-icon:hover {
+  color: #7ee2c0;
+}
+
+.footer-icon:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}

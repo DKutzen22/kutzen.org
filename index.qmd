@@ -1,6 +1,6 @@
 ---
 title: "Dalton Kutzen"
-image: images/headshot_1.jpg
+image: assets/images/headshot_1.jpg
 toc: false
 about: 
   template: jolla
@@ -31,3 +31,4 @@ will probably lead to three more. I also enjoy poetry, good music,
 and getting lost in a story.
 
 Feel free to poke around and see what I’ve been working on. This is where I share projects, notes on what I’m learning, and whatever else catches my curiosity.
+

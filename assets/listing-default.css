@@ -1,0 +1,50 @@
+/* Title block */
+#title-block-header {
+  background-image: none !important;
+  margin-bottom: 3rem;
+}
+
+/* Page title */
+#title-block-header .quarto-title .title {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+/* Page description: style the container itself */
+#title-block-header .description {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: inherit;
+}
+
+/* Handle descriptions that contain paragraph elements */
+#title-block-header .description p {
+  margin: 0;
+}
+
+/* Description links */
+#title-block-header .description a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+#title-block-header .description a:hover {
+  text-decoration: none;
+}
+
+/* listing cards  */
+.card {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    border-radius: 8px 8px 0px 0px;
+}
