@@ -27,3 +27,23 @@ body.quarto-dark .footer-icon:hover {
   outline-offset: 3px;
   border-radius: 0.25rem;
 }
+
+/* Poetry only — does not affect ordinary prose */
+.poem {
+  max-width: 42rem;
+  margin: 2.5rem auto 4rem;
+  padding-inline: clamp(0.25rem, 2vw, 1.25rem);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.05rem, 0.98rem + 0.35vw, 1.2rem);
+  line-height: 1.85;
+  color: inherit;
+}
+
+/* Separate line blocks serve as stanzas */
+.poem .line-block {
+  margin-block: 0 1.6em;
+}
+
+.poem .line-block:last-child {
+  margin-bottom: 0;
+}
