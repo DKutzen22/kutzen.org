@@ -1,0 +1,11 @@
+---
+title: "Why do I have a Homelab?"
+description: "The story behind the black hole that swallows my free time"
+author: "Dalton Kutzen"
+date: "10/21/2026"
+categories: [homelab, infrastructure-as-code]
+title-block-banner: true
+toc: true
+citation:
+    url: https://kutzen.org/blog/
+---

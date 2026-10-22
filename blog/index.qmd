@@ -1,14 +1,25 @@
 ---
-title: "Blog"
-listing:
-  contents: /
+title: "Reading Frames"
+description: "Notes on living systems, things I build, and questions I keep coming back to."
+listing: 
+  contents: 
+    - "**/index.qmd"
+    - "**/index.markdown" 
+    - "**/index.md"
   sort: "date desc"
-  date-format: long
-  type: grid
-  categories: numbered
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, author, categories, date, image]
+  image-align: right
   feed: true
-  sort-ui: true
-  filter-ui: true
-page-layout: full
-title-block-banner: true
+citation: false
+toc: false
+comments: false
+format: 
+  html: 
+    page-layout: full
+    css: ../assets/listing-default.css 
+title-block-banner: false
 ---
