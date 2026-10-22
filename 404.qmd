@@ -1,0 +1,10 @@
+---
+title: "404"
+toc: false
+---
+
+# Oh no! That page is nowhere to be found
+
+It might have been removed, renamed, or has mysteriously disappeared. 
+
+Head back to the [homepage](/) to try finding it again, or try using the search feature.
