@@ -20,14 +20,14 @@ website:
     right:
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: About
       - href: projects/index.qmd
         text: Projects
       - href: blog/index.qmd
         text: Blog
       - href: cv.qmd
         text: CV
-      - href: about.qmd
-        text: About
 
     tools:
       - icon: github
@@ -70,6 +70,7 @@ format:
     brand: brand/_brand.yml
     respect-user-color-scheme: true
     css: assets/styles.css
+    axe: true
     
     syntax-highlighting: breeze
     code-block-bg: true
@@ -81,6 +82,8 @@ format:
     
     lightbox: true
     toc: true
+    toc-title: "Contents"
+
 
 
 

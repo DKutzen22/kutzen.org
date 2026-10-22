@@ -1,6 +1,7 @@
 ---
 title: "Dalton Kutzen"
 image: assets/images/headshot_1.jpg
+image-alt: "A headshot of Dalton Kutzen"
 toc: false
 about: 
   template: jolla
