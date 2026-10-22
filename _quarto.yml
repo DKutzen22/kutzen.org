@@ -1,14 +1,22 @@
 project:
   type: website
 
+  preview:
+    port: 4200
+    host: 127.0.0.1
+
 website:
+
   title: "Dalton Kutzen"
   site-url: "https://www.kutzen.org"
-  description: "More about me than anyone wants to know"
+  description: "A study in biology, code, and curiosity."
   open-graph: true
+
   navbar:
+    
     background: primary
     search: true
+    
     right:
       - href: index.qmd
         text: Home
@@ -16,30 +24,62 @@ website:
         text: Projects
       - href: blog/index.qmd
         text: Blog
+      - href: cv.qmd
+        text: CV
       - href: about.qmd
         text: About
-      - icon: rss
-        href: blog.xml
+
     tools:
       - icon: github
         text: Source Code
         href: "https://github.com/DKutzen22/kutzen.org"
 
-
+  page-footer:  
+    
+    left: >-
+     &#169; 2026 Dalton Kutzen &#8729; Made with [Quarto](https://quarto.org)
+    
+    center: |
+      <a class="footer-icon me-1" href="/accessibility.html" title="Accessibility commitment" target="_blank" rel="noopener">{{< fa universal-access >}}</a>
+      <a class="footer-icon me-1" href="https://linkedin.com/in/daltonkutzen" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
+      <a class="footer-icon me-1" href="https://github.com/dkutzen22" title="Github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
+      <a class="footer-icon me-1" href="https://orcid.org/0009-0009-2643-8127" title="ORCID" target="_blank" rel="noopener">{{< ai orcid >}}</a>
+      <a class="footer-icon me-1" href="https://scholar.google.com/citations?user=CIkLbu4AAAAJ" title="Google Scholar" target="_blank"rel="noopener">{{< ai google-scholar >}}</a>
+    
+    right: 
+      - text: "Accessibility"
+        aria-label: "Accessibility Commitment"
+        href: accessibility.qmd
+      - text: "Contact"
+        aria-label: "Contact Form"
+        href: contact.qmd
+      - text: "License"
+        aria-label: "License Details"
+        href: license.qmd
+      - icon: rss
+        aria-label: "RSS Feed"
+        href: blog.xml
 
 format:
+  
   html:
+    
     theme:
-      - darkly
-      - brand
-      - custom.scss
-    syntax-highlighting: breezedark
-    code-copy: true
+      light: [flatly]
+      dark: [darkly, assets/custom.scss]
+    brand: brand/_brand.yml
+    respect-user-color-scheme: true
+    css: assets/styles.css
+    
+    syntax-highlighting: breeze
+    code-block-bg: true
+    code-block-border-left: true
+    code-line-numbers: true
     code-overflow: scroll
-    code-line-numbers: false
-    code-block-border-left: false
-    code-fold: false
-    css: styles.css
+    code-copy: hover
+    code-fold: show
+    
+    lightbox: true
     toc: true
 
 
