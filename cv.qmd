@@ -1,0 +1,24 @@
+---
+title: ""
+pagetitle: "Résumé and Curriculum Vitae"
+toc: false
+---
+
+## Résumé
+
+A concise overview of my education, experience, technical skills,
+and selected projects.
+
+[View résumé (PDF)](/assets/docs/Dalton_Kutzen-Resume.pdf){.btn .btn-primary}
+
+## Academic CV
+
+A more detailed record of my academic background, research,
+and related activities.
+
+[View academic CV (PDF)](/assets/docs/Dalton_Kutzen-CV.pdf){.btn .btn-primary}
+
+---
+
+For questions about my experience or potential collaborations,
+please [get in touch](contact.qmd).

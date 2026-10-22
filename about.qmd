@@ -1,15 +1,386 @@
 ---
 title: "About"
+subtitle: "Molecular biology, computational tools, and an assortment of side projects."
+page-layout: full
+toc: false
 ---
 
-What you’re studying.
+<style>
+#title-block-header {
+  display: none;
+}
 
-What draws you to phage genomics and computational biology.
+/* Default/light palette — Flatly */
+.about-page {
+  --about-surface: #f5f7f8;
+  --about-border: #dce3e7;
+  --about-text: #263746;
+  --about-muted: #52616d;
+  --about-accent: #087c65;
 
-Why you enjoy building software and infrastructure.
+  width: 100%;
+  max-width: 1080px;
+  margin-inline: auto;
+  padding: 1rem clamp(0.25rem, 2vw, 1.5rem) 3rem;
+  color: var(--about-text);
+}
 
-What you’re currently learning.
+/* Dark palette — Darkly */
+body.quarto-dark .about-page {
+  --about-surface: #292929;
+  --about-border: #454545;
+  --about-text: #eeeeee;
+  --about-muted: #c1c5c9;
+  --about-accent: #7ee2c0;
+}
 
-A little about your writing or other interests.
+.about-page,
+.about-page * {
+  box-sizing: border-box;
+}
 
-An email link and professional profiles.
+/* Introduction */
+.about-page .about-hero {
+  max-width: 850px;
+  padding: 2rem 0 3.5rem;
+}
+
+.about-page .about-eyebrow {
+  color: var(--about-accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.about-page .about-hero h1 {
+  color: var(--about-text);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin: 0 0 1.5rem;
+}
+
+.about-page .about-lead {
+  color: var(--about-text);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.7;
+}
+
+.about-page .about-muted {
+  color: var(--about-muted);
+  max-width: 70ch;
+  line-height: 1.8;
+}
+
+/* Sections */
+.about-page .about-section {
+  margin-bottom: 4rem;
+}
+
+.about-page .about-section > h2 {
+  color: var(--about-text);
+  border-bottom: none;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 500;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.about-page .about-section > p {
+  max-width: 75ch;
+  line-height: 1.85;
+}
+
+/* Project and skill grids */
+.about-page .about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  align-items: stretch;
+}
+
+.about-page .about-card {
+  min-width: 0;
+  padding: 1.75rem;
+  color: var(--about-text);
+  background: var(--about-surface);
+  border: 1px solid var(--about-border);
+  border-radius: 14px;
+}
+
+.about-page .about-card h3 {
+  color: var(--about-text);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 1rem;
+}
+
+.about-page .about-card p,
+.about-page .about-card li {
+  color: var(--about-muted);
+  line-height: 1.75;
+}
+
+.about-page .about-card ul {
+  padding-left: 1.2rem;
+}
+
+.about-page .about-card li {
+  padding-left: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.about-page .about-card li::marker {
+  color: var(--about-accent);
+}
+
+.about-page .about-card > :last-child {
+  margin-bottom: 0;
+}
+
+.about-page .about-label {
+  color: var(--about-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+}
+
+.about-page .about-label p {
+  color: inherit;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.about-page .about-wide {
+  grid-column: 1 / -1;
+}
+
+/* Highlighted statement */
+.about-page .about-note {
+  max-width: 800px;
+  margin: 2rem 0 0;
+  padding: 1.25rem 1.5rem;
+  color: var(--about-text);
+  background: var(--about-surface);
+  border-left: 3px solid var(--about-accent);
+  border-radius: 0 10px 10px 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-page .about-note p {
+  margin: 0;
+}
+
+/* Links */
+.about-page a:not(.anchorjs-link) {
+  color: var(--about-accent);
+  text-underline-offset: 0.2em;
+}
+
+.about-page a:not(.anchorjs-link):hover {
+  text-decoration: underline;
+}
+
+/* Mobile layout */
+@media (max-width: 760px) {
+  .about-page .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .about-hero {
+    padding: 1.5rem 0 2.5rem;
+  }
+
+  .about-page .about-section {
+    margin-bottom: 3rem;
+  }
+
+  .about-page .about-card {
+    padding: 1.4rem;
+  }
+}
+</style>
+
+::: {.about-page}
+
+::: {.about-hero}
+
+::: {.about-eyebrow}
+Biology · Software · Systems
+:::
+
+# Hi, I’m Dalton.
+
+::: {.about-lead}
+I study molecular biology at Brigham Young University and build computational tools for exploring biological questions.
+:::
+
+::: {.about-muted}
+My interests sit somewhere between bacteriophage genomics, scientific software, and the systems that make research possible. I like understanding how things work—and building tools that make them easier to understand.
+:::
+
+:::
+
+::: {.about-section}
+
+## Connecting biology and computation
+
+I’m especially interested in bacteriophages and what we can learn by comparing their genomes. My work involves genome annotation, comparative analysis, and developing tools to organize, explore, and visualize the results.
+
+The computational side matters to me for more than speed. I want an analysis to be understandable: what went into it, which decisions shaped it, and how someone else could reproduce it.
+
+::: {.about-note}
+I enjoy the space between a biological question and a working tool: turning an idea into an analysis, a visualization, or a workflow someone can actually use.
+:::
+
+:::
+
+::: {.about-section}
+
+## What I’m building
+
+::: {.about-grid}
+
+::: {.about-card}
+
+::: {.about-label}
+Scientific workflows
+:::
+
+### Phantom
+
+A Snakemake-based workflow for phage analysis, bringing computational steps into a more organized and reproducible process.
+
+The project brings together my interests in genomics, workflow design, and scientific software development.
+
+:::
+
+::: {.about-card}
+
+::: {.about-label}
+Analysis & visualization
+:::
+
+### Tools for understanding genomes
+
+R and Python tools for phage visualization and post-annotation analysis.
+
+I’m interested in making results easier to investigate—not just generating output, but helping people see relationships and ask useful follow-up questions.
+
+:::
+
+::: {.about-card .about-wide}
+
+::: {.about-label}
+Infrastructure & experimentation
+:::
+
+### A homelab that keeps growing
+
+I build and manage Linux servers, virtual machines, containers, and self-hosted services. It’s a practical environment for learning about networking, automation, and the infrastructure behind the software I use.
+
+It’s also where “I wonder if I could…” tends to become a weekend project.
+
+:::
+
+:::
+:::
+
+::: {.about-section}
+
+## Skills & tools
+
+These are the areas I work in and the tools I use across research, software projects, and infrastructure.
+
+::: {.about-grid}
+
+::: {.about-card}
+
+### Bioinformatics & genomics
+
+- Bacteriophage genome annotation
+- Comparative genomics
+- Post-annotation analysis
+- Biological data visualization
+- Reproducible analysis workflows
+
+:::
+
+::: {.about-card}
+
+### Programming & data analysis
+
+- Python and R
+- Scientific scripting and automation
+- Data processing and visualization
+- Command-line tools and shell scripting
+- Developing reusable analysis tools
+
+:::
+
+::: {.about-card}
+
+### Research software & reproducibility
+
+- Snakemake workflow development
+- Conda environment management
+- Git and GitHub
+- GitHub Actions and CI/CD
+- Quarto documentation and publishing
+
+:::
+
+::: {.about-card}
+
+### Systems & infrastructure
+
+- Linux server administration
+- Proxmox and virtualization
+- Containers and self-hosted services
+- Networking and troubleshooting
+- Hardware configuration and repurposing
+
+:::
+
+:::
+:::
+
+::: {.about-section}
+
+## What I’m learning next
+
+I’m strengthening the mathematical and computational foundations behind my work, particularly statistics, probability, linear algebra, and machine learning.
+
+I’m also exploring:
+
+- Systems biology and mathematical modeling
+- Python package design and software testing
+- R package and Bioconductor development
+- Cybersecurity and network visibility
+- Kubernetes, GitOps, and infrastructure automation
+
+I like learning through projects: finding a problem worth solving, building a first version, and improving it as I understand the problem better.
+
+:::
+
+::: {.about-section}
+
+## Beyond the technical side
+
+Not everything I do belongs in a terminal.
+
+I enjoy poetry, music, anime, and games. I also like working with electronics and repurposed hardware—projects where there’s something physical to experiment with alongside the code.
+
+This site brings those interests together: part research notebook, part project portfolio, and part place to write about whatever has caught my attention.
+
+:::
+
+:::
