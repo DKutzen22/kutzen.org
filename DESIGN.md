@@ -230,9 +230,22 @@ Accessibility is a first-class architectural requirement across the site:
 
 1. **Automated Auditing**: `axe: true` is configured in `_quarto.yml`, continuously evaluating pages against axe-core accessibility rules during development and build.
 2. **Keyboard Navigation & Focus**: All interactive elements (navbar items, footer links, action buttons) have explicit `:focus-visible` outlines (`2px solid currentColor` with offset).
-3. **Contrast Compliance**: Light and dark themes maintain WCAG AA contrast standards across body text, headings, muted captions, and code spans.
+3. **Contrast Compliance**: Both light and dark appearances must meet the project's WCAG AA contrast requirements for applicable text and interface elements. The supplied palette expresses design intent; individual foreground/background combinations still require validation. Record any identified failures and proposed adjustments. Do not describe contrast compliance as verified without supporting test results.
 4. **Descriptive Link Texts & Labels**: Links provide descriptive text and `aria-label` tags for screen readers (e.g., RSS, GitHub, Accessibility Commitment).
 5. **Transparency & Reporting**: `accessibility.qmd` openly states the site's current accessibility posture and provides a direct GitHub issue link for reporting digital barriers.
+
+### Accessibility evaluation
+
+The documented configuration includes `axe: true`.
+
+Confirm the actual behavior of this setting in the project's
+Quarto version and development workflow.
+
+Agent completion reports must distinguish:
+- Checks that are configured.
+- Checks that were actually run.
+- Findings that remain unresolved.
+- Manual review that was performed.
 
 ---
 
