@@ -224,7 +224,7 @@ I study molecular biology at Brigham Young University and build computational to
 :::
 
 ::: {.about-muted}
-My interests sit somewhere between bacteriophage genomics, scientific software, and the systems that make research possible. I like understanding how things work—and building tools that make them easier to understand.
+My work lives at the intersection of bacteriophage genomics, scientific software, and the systems that make research possible. I enjoy taking complex biological questions and building clean, reproducible tools to explore them.
 :::
 
 :::
@@ -233,12 +233,12 @@ My interests sit somewhere between bacteriophage genomics, scientific software, 
 
 ## Connecting biology and computation
 
-I’m especially interested in bacteriophages and what we can learn by comparing their genomes. My work involves genome annotation, comparative analysis, and developing tools to organize, explore, and visualize the results.
+I’m fascinated by bacteriophages—the viruses that infect bacteria—and what comparative genomics can reveal about their evolutionary adaptations. Working with phages bridges wet-lab microbiology (culturing hosts, running plaque and spot assays) with computational biology (assembling and annotating genomes, comparing gene architectures, and investigating synteny).
 
-The computational side matters to me for more than speed. I want an analysis to be understandable: what went into it, which decisions shaped it, and how someone else could reproduce it.
+To me, computational biology is more than running tools quickly. It’s about making analyses clear and reproducible. When an experiment yields an unexpected insight, anyone should be able to inspect what went into it: which decisions shaped the pipeline, which parameters were chosen, and how the results can be verified independently.
 
 ::: {.about-note}
-I enjoy the space between a biological question and a working tool: turning an idea into an analysis, a visualization, or a workflow someone can actually use.
+I enjoy the space between a biological question and a working tool: turning an idea into an analysis, a visualization, or a workflow someone can actually use and build upon.
 :::
 
 :::
@@ -252,28 +252,28 @@ I enjoy the space between a biological question and a working tool: turning an i
 ::: {.about-card}
 
 ::: {.about-label}
-Scientific workflows
+Reproducible publishing
 :::
 
-### Phantom
+### [Papertrail](/projects/papertrail/)
 
-A Snakemake-based workflow for phage analysis, bringing computational steps into a more organized and reproducible process.
+A résumé-as-code template built with Quarto and Typst. It stores career history in modular YAML files and compiles both a one-page résumé and a full academic CV with sub-second compilation—without LaTeX dependencies.
 
-The project brings together my interests in genomics, workflow design, and scientific software development.
+[Explore the project →](/projects/papertrail/)
 
 :::
 
 ::: {.about-card}
 
 ::: {.about-label}
-Analysis & visualization
+Genomics & workflows
 :::
 
-### Tools for understanding genomes
+### Genomic analysis tooling
 
-R and Python tools for phage visualization and post-annotation analysis.
+Workflows and visualization tools for bacteriophage comparative genomics and post-annotation analysis.
 
-I’m interested in making results easier to investigate—not just generating output, but helping people see relationships and ask useful follow-up questions.
+I focus on making biological relationships easier to investigate—turning raw sequence files and annotation outputs into clear visual representations that prompt useful questions.
 
 :::
 
@@ -283,11 +283,13 @@ I’m interested in making results easier to investigate—not just generating o
 Infrastructure & experimentation
 :::
 
-### A homelab that keeps growing
+### [A homelab that keeps growing](/blog/2026-10_why_homelab/)
 
-I build and manage Linux servers, virtual machines, containers, and self-hosted services. It’s a practical environment for learning about networking, automation, and the infrastructure behind the software I use.
+I build and maintain a quiet, self-hosted Linux environment running Proxmox VE, virtual machines, and Docker containers. It serves as an ongoing sandbox for experimenting with networking, containerization, local backups, and infrastructure as code.
 
-It’s also where “I wonder if I could…” tends to become a weekend project.
+It’s where "I wonder if I could…" turns into a weekend project—and where breaking things safely builds real systems intuition.
+
+[Read about why I self-host →](/blog/2026-10_why_homelab/)
 
 :::
 
@@ -298,7 +300,7 @@ It’s also where “I wonder if I could…” tends to become a weekend project
 
 ## Skills & tools
 
-These are the areas I work in and the tools I use across research, software projects, and infrastructure.
+These are the technical areas I work in and the tools I rely on across research, software development, and infrastructure.
 
 ::: {.about-grid}
 
@@ -306,11 +308,11 @@ These are the areas I work in and the tools I use across research, software proj
 
 ### Bioinformatics & genomics
 
-- Bacteriophage genome annotation
-- Comparative genomics
-- Post-annotation analysis
+- Bacteriophage genome annotation & analysis
+- Comparative genomics and synteny
+- Single-cell transcriptomics & Perturb-seq analysis
 - Biological data visualization
-- Reproducible analysis workflows
+- Reproducible workflow pipelines
 
 :::
 
@@ -318,11 +320,11 @@ These are the areas I work in and the tools I use across research, software proj
 
 ### Programming & data analysis
 
-- Python and R
-- Scientific scripting and automation
-- Data processing and visualization
-- Command-line tools and shell scripting
-- Developing reusable analysis tools
+- Python and R for scientific analysis
+- Command-line tools, Bash, and POSIX scripting
+- Data processing with pandas, tidyverse, and SQL
+- Statistical visualization with ggplot2
+- Scientific publishing with Quarto and Typst
 
 :::
 
@@ -330,11 +332,11 @@ These are the areas I work in and the tools I use across research, software proj
 
 ### Research software & reproducibility
 
-- Snakemake workflow development
-- Conda environment management
-- Git and GitHub
-- GitHub Actions and CI/CD
-- Quarto documentation and publishing
+- Snakemake declarative workflow development
+- Conda environment management and isolation
+- Git version control and GitHub workflows
+- GitHub Actions CI/CD automation
+- Literate programming and documentation
 
 :::
 
@@ -342,11 +344,11 @@ These are the areas I work in and the tools I use across research, software proj
 
 ### Systems & infrastructure
 
-- Linux server administration
-- Proxmox and virtualization
-- Containers and self-hosted services
-- Networking and troubleshooting
-- Hardware configuration and repurposing
+- Linux server administration (Debian & Ubuntu)
+- Proxmox VE hypervisor and virtualization
+- Docker, Docker Compose, and container networking
+- DNS, reverse proxies, and local VPNs
+- Hardware repurposing and configuration
 
 :::
 
@@ -357,17 +359,17 @@ These are the areas I work in and the tools I use across research, software proj
 
 ## What I’m learning next
 
-I’m strengthening the mathematical and computational foundations behind my work, particularly statistics, probability, linear algebra, and machine learning.
+I am actively strengthening the mathematical and computational foundations behind my work, particularly statistics, probability, linear algebra, and machine learning models in biology.
 
 I’m also exploring:
 
-- Systems biology and mathematical modeling
-- Python package design and software testing
-- R package and Bioconductor development
-- Cybersecurity and network visibility
-- Kubernetes, GitOps, and infrastructure automation
+- Python package design, automated testing, and release engineering
+- R package and Bioconductor development workflows
+- Infrastructure as Code with Ansible and lightweight Kubernetes (k3s)
+- Mathematical modeling and systems biology
+- Local open-weights model inference on dedicated hardware
 
-I like learning through projects: finding a problem worth solving, building a first version, and improving it as I understand the problem better.
+I believe in learning by building: identifying a problem worth solving, crafting a first working implementation, and refining it as understanding deepens.
 
 :::
 
@@ -377,9 +379,9 @@ I like learning through projects: finding a problem worth solving, building a fi
 
 Not everything I do belongs in a terminal.
 
-I enjoy poetry, music, anime, and games. I also like working with electronics and repurposed hardware—projects where there’s something physical to experiment with alongside the code.
+I enjoy reading and writing poetry, listening to good music, watching anime, and getting immersed in games. I also like hands-on electronics and repurposing older hardware—projects where there is something physical to solder, cable, or tinker with alongside the code.
 
-This site brings those interests together: part research notebook, part project portfolio, and part place to write about whatever has caught my attention.
+This site brings those pieces together: half research notebook and project portfolio, and half poetry notebook with room for whatever catches my curiosity.
 
 :::
 
