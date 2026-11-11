@@ -47,3 +47,23 @@ body.quarto-dark .footer-icon:hover {
 .poem .line-block:last-child {
   margin-bottom: 0;
 }
+
+/* Project detail header buttons */
+.project-header {
+  margin: 1.5rem 0 2rem;
+}
+
+.project-header .btn {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+body.quarto-dark .project-header .btn-outline-primary {
+  color: #7ee2c0;
+  border-color: #7ee2c0;
+}
+
+body.quarto-dark .project-header .btn-outline-primary:hover {
+  background-color: #7ee2c0;
+  color: #1b1b1b;
+}
