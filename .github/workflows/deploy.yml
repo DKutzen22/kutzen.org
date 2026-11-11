@@ -20,6 +20,53 @@ jobs:
     timeout-minutes: 20
 
     steps:
+      - name: Diagnose Cloudflare Pages access
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -z "${CLOUDFLARE_API_TOKEN:-}" ]]; then
+            echo "::error::CLOUDFLARE_API_TOKEN is missing or empty."
+            exit 1
+          fi
+
+          if [[ -z "${CLOUDFLARE_ACCOUNT_ID:-}" ]]; then
+            echo "::error::CLOUDFLARE_ACCOUNT_ID is missing or empty."
+            exit 1
+          fi
+
+          response_file="$(mktemp)"
+          trap 'rm -f "$response_file"' EXIT
+
+          status="$(curl --silent --show-error \
+            --output "$response_file" \
+            --write-out '%{http_code}' \
+            --header "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects")"
+
+          echo "Cloudflare HTTP status: $status"
+
+          jq '{
+            success,
+            errors,
+            messages,
+            project_names: (
+              if (.result | type) == "array"
+              then [.result[] | .name]
+              else []
+              end
+            )
+          }' "$response_file"
+
+          if [[ "$status" != "200" ]]; then
+            exit 1
+          fi
+
+          jq -e '.success == true' "$response_file" >/dev/null
+
       - name: Check out repository
         uses: actions/checkout@v6
 
