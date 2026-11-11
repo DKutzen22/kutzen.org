@@ -2,7 +2,7 @@
 title: "Papertrail"
 subtitle: "A résumé-as-code template turning structured YAML into polished PDFs with Quarto and Typst."
 description: "A reproducible résumé and CV generation framework that separates career data from layout, enabling version-controlled, single-source document generation."
-date: "2026-10-18"
+date: "2026-11-11"
 categories: [Quarto, Typst, Automation, Open Source]
 image: featured.svg
 toc: true

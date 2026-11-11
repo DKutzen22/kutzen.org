@@ -1,7 +1,7 @@
 ---
 title: "Why do I have a Homelab?"
 description: "The story behind the black hole that swallows my free time—and why self-hosting has been one of the best ways I’ve learned how computers actually work."
-date: "2026-10-21"
+date: "2026-11-11"
 categories: [homelab, linux, self-hosting, infrastructure]
 image: featured.jpg
 image-alt: "Network switch and ethernet cabling close-up by Taylor Vick on Unsplash"
