@@ -1,0 +1,133 @@
+---
+title: "Papertrail"
+subtitle: "A résumé-as-code template turning structured YAML into polished PDFs with Quarto and Typst."
+description: "A reproducible résumé and CV generation framework that separates career data from layout, enabling version-controlled, single-source document generation."
+date: "2026-10-18"
+categories: [Quarto, Typst, Automation, Open Source]
+image: featured.svg
+toc: true
+---
+
+::: {.project-header}
+[View Source on GitHub](https://github.com/dkutzen22/papertrail){.btn .btn-primary target="_blank"}
+[View Dalton's Résumé](/assets/docs/Dalton_Kutzen-Resume.pdf){.btn .btn-outline-primary target="_blank"}
+[View Dalton's Academic CV](/assets/docs/Dalton_Kutzen-CV.pdf){.btn .btn-outline-primary target="_blank"}
+:::
+
+## Overview
+
+**Papertrail** is an open-source template that treats résumé and curriculum vitae maintenance like software development. 
+
+Instead of formatting documents by hand in a word processor or maintaining separate, drifting files for different job applications, Papertrail stores career data in modular YAML files. A custom [Typst](https://typst.app/) engine compiled through [Quarto](https://quarto.org/) then assembles that data into both a tight one-page résumé and an exhaustive academic CV.
+
+In fact, the résumé and CV available on this website were compiled directly with Papertrail.
+
+---
+
+## Why I Built It
+
+Maintaining career documents by hand is notoriously frustrating:
+
+1. **Format Drift**: Keeping a comprehensive academic CV and a focused one-page résumé in sync usually means copying and pasting text across multiple files, invariably introducing inconsistencies.
+2. **Layout Fragility**: Small wording changes in standard document editors often cause catastrophic line wraps, spilling a carefully balanced one-page resume onto an unwanted second page.
+3. **The LaTeX Problem**: Traditional "résumé as code" solutions almost universally rely on LaTeX. While LaTeX provides precise typography and plays nicely with Git, it comes with heavy costs: multi-gigabyte compiler toolchains (such as MacTeX or TeXLive), sluggish compile times, and cryptic macro syntax where content gets buried under typesetting commands.
+
+I wanted a setup that gave me:
+
+- **Single-source data**: Add a publication, project, or work experience once, and let the system decide where and how to render it.
+- **Fast, modern typesetting**: Clean typographic output with sub-second compilation.
+- **Zero heavy dependencies**: Build documents out of the box using tools I already use for scientific writing without installing LaTeX.
+
+---
+
+## How It Works
+
+Papertrail is organized around a clean separation between **data**, **presentation logic**, and **document targets**:
+
+```
+papertrail/
+├── data/                          # Structured career data (YAML)
+│   ├── education.yml
+│   ├── experience.yml
+│   ├── projects.yml
+│   ├── publications.yml
+│   ├── skills.yml
+│   └── awards.yml
+├── 00-formatters.typ              # Reusable Typst layout functions
+├── 01-cv.qmd                      # Master document for academic CV
+├── 02-resume.qmd                  # Master document for 1-page résumé
+└── output/                        # Rendered PDF documents
+    ├── Dalton_Kutzen-CV.pdf
+    └── Dalton_Kutzen-Resume.pdf
+```
+
+### 1. Modular Data Layer
+
+Content is stored as plain YAML in the `data/` directory. Each entry contains structured fields alongside a `show_in` tag that controls which document variants should include it:
+
+```yaml
+- title: "[Phantom — Bacteriophage Analysis Workflow](https://github.com/dkutzen22/phantom)"
+  details:
+    - "Modular Snakemake pipeline for phage genome annotation and downstream comparative analysis."
+    - "Uses isolated Conda environments and declarative rules to make runs reproducible across systems."
+  show_in: [resume, cv]
+```
+
+If an item is only relevant for a complete academic CV (such as an extensive poster session or full coursework list), setting `show_in: [cv]` keeps it out of the compact one-page résumé automatically.
+
+### 2. Typst Formatting Pipeline
+
+The core formatting logic lives in `00-formatters.typ`. It provides helper functions that:
+- Ingest the YAML data files.
+- Filter entries based on the active document target (`resume` or `cv`).
+- Parse inline Markdown formatting (such as `**bold**`, `*italics*`, and `[link text](url)`) within YAML strings into native Typst content blocks.
+- Format dates, organizations, and bulleted details with consistent margins and hierarchy.
+
+### 3. Native Quarto Integration
+
+Because Quarto bundles native support for Typst, compiling both documents requires no external compilers or complex Makefile setups:
+
+```bash
+# Render both Resume and CV in milliseconds
+quarto render
+
+# Or render an individual target
+quarto render 02-resume.qmd --to typst
+```
+
+---
+
+## Technical Decisions & Tradeoffs
+
+### Why Typst Over LaTeX?
+Typst was designed from the ground up to replace LaTeX for modern document preparation. It compiles in milliseconds rather than seconds, features human-readable error messages, and uses clean scripting syntax. 
+
+*The tradeoff*: Typst's package ecosystem is newer than TeX's decades-old ecosystem. However, for structured document layouts like résumés, Typst’s native grid and layout primitives provide far superior control with dramatically less code.
+
+### Why YAML as the Data Store?
+YAML is human-readable, readable in Git diffs, and universally supported across programming languages.
+
+*The tradeoff*: YAML can occasionally be sensitive to unquoted special characters (such as colons or brackets in titles). I established conventions in Papertrail—such as quoting Markdown links—to ensure parsing remains predictable and robust.
+
+---
+
+## Current State & What’s Next
+
+Papertrail is published as an open-source template repository on GitHub under [DKutzen22/papertrail](https://github.com/dkutzen22/papertrail). Anyone can use it as a template by clicking **"Use this template"** on GitHub.
+
+### What works today:
+- Dual-target compilation from a single shared data directory.
+- Dynamic filtering by document target (`show_in`).
+- Markdown link and style parsing inside Typst blocks.
+- Tested and active in production for my own résumé and CV.
+
+### Areas for future exploration:
+- **HTML Web View**: Writing a renderer to generate a responsive HTML version of the CV directly from the same YAML files, eliminating duplicate editing between web pages and PDF files.
+- **Section Sorting Options**: Adding configurable chronological vs. relevance-based sorting parameters for flexible tailoring.
+
+---
+
+## Links & Source Code
+
+- **GitHub Repository**: [github.com/dkutzen22/papertrail](https://github.com/dkutzen22/papertrail)
+- **Live Example**: [Dalton's Résumé (PDF)](/assets/docs/Dalton_Kutzen-Resume.pdf) & [Dalton's CV (PDF)](/assets/docs/Dalton_Kutzen-CV.pdf)

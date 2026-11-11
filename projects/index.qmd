@@ -1,5 +1,18 @@
 ---
 title: "Projects"
+subtitle: "Scientific software, computational workflows, and open-source tools."
+listing:
+  contents:
+    - "*/index.qmd"
+  sort: "date desc"
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [image, title, description, categories]
+  image-height: 220px
+page-layout: full
+toc: false
 ---
 
-Projects, etc.
+A collection of scientific software, computational workflows, and open-source projects. Here, I document the motivation, architecture, and lessons learned behind the things I build.
