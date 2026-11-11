@@ -1,6 +1,6 @@
 ---
 title: ""
-pagetitle: "Résumé and Curriculum Vitae"
+pagetitle: "Résumé and CV"
 toc: false
 ---
 
@@ -11,7 +11,7 @@ and selected projects.
 
 [View résumé (PDF)](/assets/docs/Dalton_Kutzen-Resume.pdf){.btn .btn-primary}
 
-## Academic CV
+## Curriculum Vitae
 
 A more detailed record of my academic background, research,
 and related activities.
