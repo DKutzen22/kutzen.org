@@ -28,6 +28,8 @@ website:
         text: Blog
       - href: cv.qmd
         text: CV
+      - href: contact.qmd
+        text: Contact
 
     tools:
       - icon: github
