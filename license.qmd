@@ -1,11 +1,42 @@
 ---
-comments: false
-date: "2026-10-21T09:00:00+00:00"
-title: "License"
+title: "Licensing"
+toc: false
 ---
 
-My [blog posts](/blog) are released under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+## Blog posts and educational material
 
-<center>
-{{< fa brands creative-commons size=2xl >}} {{< fa brands creative-commons-by size=2xl >}} {{< fa brands creative-commons-sa size=2xl >}}
-</center>
+Unless otherwise noted, my blog posts and original educational diagrams
+are licensed under the
+[Creative Commons Attribution-ShareAlike 4.0 International
+license](https://creativecommons.org/licenses/by-sa/4.0/).
+
+
+::: {.my-4 .text-center}
+{{< fa brands creative-commons size=2xl >}}
+{{< fa brands creative-commons-by size=2xl >}}
+{{< fa brands creative-commons-sa size=2xl >}}
+:::
+
+
+Photographs, poems, and third-party material are excluded from this
+license unless explicitly marked otherwise.
+
+## Photography and poetry
+
+My photographs, poems, and other creative writing are
+© Dalton Kutzen. All rights reserved unless otherwise noted.
+
+For republication, adaptation, or other permissions, please
+[contact me](/contact).
+
+## Software
+
+Software projects are governed by the licenses in their respective
+repositories. The blog’s Creative Commons license does not apply
+to software unless explicitly stated.
+
+## Other material
+
+Third-party material remains subject to its own terms.
+Other original material is all rights reserved unless otherwise noted.
+
