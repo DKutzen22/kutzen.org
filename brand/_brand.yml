@@ -56,3 +56,11 @@ typography:
   link:
     color: teal
     decoration: none
+
+logo:
+  small:
+    light: images/logo-light.svg
+    dark: images/logo-dark.svg
+  medium:
+    light: images/logo-light.svg
+    dark: images/logo-dark.svg
