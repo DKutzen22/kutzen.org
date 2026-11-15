@@ -72,6 +72,7 @@ format:
     theme:
       light: [flatly]
       dark: [darkly, assets/custom.scss]
+    brand: brand/_brand.yml
     respect-user-color-scheme: true
     css: assets/styles.css
     axe: true

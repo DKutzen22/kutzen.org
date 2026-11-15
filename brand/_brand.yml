@@ -11,17 +11,6 @@ color:
     light-gray: "#adb5bd"
     dark-gray: "#303030"
 
-  background: charcoal
-  foreground: white
-  primary: navy
-  secondary: gray
-  success: teal
-  info: blue
-  warning: yellow
-  danger: red
-  light: light-gray
-  dark: dark-gray
-
 typography:
   fonts:
     - family: Raleway
