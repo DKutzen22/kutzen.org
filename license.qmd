@@ -35,6 +35,12 @@ Software projects are governed by the licenses in their respective
 repositories. The blog’s Creative Commons license does not apply
 to software unless explicitly stated.
 
+## Logo
+
+The [logo](/brand/images/logo-light.svg) artwork is © 2026 Dalton Kutzen. All rights reserved.
+It is excluded from the licenses covering this repository’s
+code and written content.
+
 ## Other material
 
 Third-party material remains subject to its own terms.
